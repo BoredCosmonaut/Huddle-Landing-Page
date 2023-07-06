@@ -1,0 +1,230 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+
+body {
+    width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.card {
+	background-image: url("images/bg-mobile.svg");
+	background-repeat: no-repeat;
+	background-color: hsl(257, 40%, 49%);
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	border-radius: 10px;
+	margin:5% auto;
+	display: flex;
+	flex-direction: column;
+	width: 385px;
+	height: 750px;
+}
+
+.logo {
+	display: flex;
+	width: auto;
+	height: 10%;
+	margin: 5%;
+	margin-bottom: 10%;
+}
+
+.mockup {
+	display: flex;
+	margin-left: 10%;
+	width: 80%;
+	height: auto;
+}
+
+.mockup-image {
+	width: 100%;
+	height: auto;
+}
+
+.text {
+	text-align: center;
+}
+
+.header {
+	font-style:'Poppins', sans-serif;
+	font-weight: 600;
+	color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 4%;
+	font-size: 30px;
+}
+
+.mid-text {
+	font-style:'Poppins', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin:12%;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	font-size: 20px;
+	color: white;
+}
+
+.register {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: hsl(257, 40%, 49%);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	font-size: 15px;
+	border-style: none;
+	border-radius: 20px;
+	padding: 4% 25%;
+}
+
+.icons {
+	margin-top: 10%;
+	margin-left: 7%;
+}
+
+.icon-instagram {
+	font-size: 20px;
+	margin-right: 5%;
+	padding: 3%;
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+}
+
+.icon-facebook {
+	font-size: 20px;
+	margin-right: 5%;
+	padding: 3%;
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+}
+
+.icon-twitter {
+	font-size: 20px;
+	margin-right: 5%;
+	padding: 3%;
+	border: 2px solid white;
+	border-radius: 50%;
+	color: white;
+}
+
+@media(min-width:400px) {
+	.card {
+		background-image: url("images/bg-desktop.svg");
+		width: 1400px;
+		height: 700px;
+		flex-direction: row;
+	}
+
+	.top {
+		display: flex;
+		flex-direction: column;
+		width: 750px;
+		height: 700px;
+	}
+
+	.logo {
+		height: auto;
+		margin-top: 5%;
+		margin-left: 5%;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		width: 450px;
+		height: 50px;
+	}
+
+	.logo-image {
+		max-width: 450px;
+		max-height: 50px;
+	}
+
+	.mockup {
+		height: 700px;
+		width: 850px;
+		margin-top: 10%;
+		margin-left: 5%;
+		margin-bottom: 15%;
+	}
+
+	.mockup-image {
+		max-width: 700px;
+		max-height: 600px;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-top: 15%;
+		margin-left: 2%;
+		width: 650px;
+	}
+
+	.header{
+		margin: 0;
+		word-spacing: 5px;
+		font-size: 35px;
+		width: 400px;
+		margin-bottom: 5%;
+	}
+
+	.mid-text{
+		margin: 0;
+		margin-bottom: 5%;
+		width: 500px;
+	}
+
+	.register {
+		width: 200px;
+		padding: 3% 10%;
+	}
+
+	.icons {
+		margin-top: 25%;
+		margin-left: 60%;
+	}
+
+}
